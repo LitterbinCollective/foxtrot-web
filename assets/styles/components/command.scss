@@ -1,0 +1,73 @@
+.slide {
+  .front {
+    padding: 1em 1.5em;
+    cursor: pointer;
+    border: 1px solid var(--elements-border-primary-static);
+    border-radius: var(--radii-md);
+
+    span {
+      font-weight: bold;
+    }
+
+    .aliases {
+      float: right;
+      color: var(--color-gray-500);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 50%;
+
+      @media screen and (orientation: portrait) {
+        float: initial;
+        max-width: initial;
+        white-space: initial;
+        display: inline;
+        padding-left: 1ch;
+      }
+    }
+  }
+
+  .front:hover, &.append .front {
+    // it just works
+    background: var(--elements-border-primary-static);
+
+    span {
+      color: var(--color-primary-500);
+    }
+  }
+
+  .full, .full--inner {
+    transition: .3s, border-radius 0s;
+  }
+
+  .full {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border: 0;
+
+    &--inner {
+      padding: 2em 1.5em;
+      position: absolute;
+      overflow: hidden;
+      height: auto;
+      top: 0;
+      left: 0;
+      border: 1px var(--elements-border-primary-static) solid;
+      border-radius: 0 0 var(--radii-md) var(--radii-md);
+      border-top: 0;
+      width: 100%;
+
+      .arguments {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &.append {
+    .front {
+      border-radius: var(--radii-md) var(--radii-md) 0 0;
+    }
+  }
+}

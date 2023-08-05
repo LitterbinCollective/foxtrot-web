@@ -1,0 +1,13 @@
+.v-popper--theme-ft-tooltip .v-popper {
+  &__arrow-outer, &__arrow-inner {
+    border-color: var(--elements-border-primary-static);
+  }
+
+  &__inner {
+    border-radius: var(--radii-md);
+    border: 1px solid var(--elements-border-primary-static);
+    backdrop-filter: var(--elements-backdrop-filter);
+    background: var(--elements-backdrop-background);
+    color: var(--docus-body-color);
+  }
+}

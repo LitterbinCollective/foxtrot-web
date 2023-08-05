@@ -1,0 +1,23 @@
+.command, .argument {
+  border: 2px dashed var(--color-primary-200);
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: var(--radii-md);
+  margin: 4px 4px 0 0;
+  cursor: help;
+}
+
+.command, .argument.required {
+  color: var(--docus-body-backgroundColor);
+}
+
+.argument.required {
+  background: var(--color-primary-200);
+}
+
+.command {
+  font-weight: bold;
+  border-color: var(--color-primary-400);
+  background: var(--color-primary-400);
+  cursor: auto;
+}
