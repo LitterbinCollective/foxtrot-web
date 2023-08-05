@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# foxtrot-web
+Frontend made with Nuxt.js.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
+## Testing
+```
+# install packages
 npm install
 
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
+# run dev
 npm run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
+## Production build
 ```
+npm run generate
 
-Locally preview production build:
-
-```bash
+# to preview
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
