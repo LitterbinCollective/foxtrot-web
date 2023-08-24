@@ -4,6 +4,7 @@ import Utils from './utils';
 import Voice from './voice';
 import VoiceCorrupt from './voicecorrupt';
 import VoiceEffect from './voiceeffect';
+import VoiceModules from './voicemodules';
 import VoiceQueue from './voicequeue';
 
 export interface CommandArgument {
@@ -29,6 +30,7 @@ const Commands: Record<string, Category> = {
   Voice,
   VoiceCorrupt,
   VoiceEffect,
+  VoiceModules,
   VoiceQueue
 };
 
