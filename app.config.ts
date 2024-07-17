@@ -20,6 +20,16 @@ export default defineAppConfig({
           href: '/invite',
           icon: 'simple-icons:discord'
         }
+      ],
+      textLinks: [
+        {
+          href: '/legal/terms-of-service',
+          text: 'terms of service'
+        },
+        {
+          href: '/legal/privacy-policy',
+          text: 'privacy policy'
+        }
       ]
     }
   }
